@@ -1,234 +1,3 @@
-// Theory content
-const theoryData = {
-  part1_a: {
-    title: "Teoría: THERE IS / THERE ARE (Presente)",
-    content: `
-      <h2>THERE IS / THERE ARE - Presente</h2>
-      
-      <h3>¿Cuándo usamos THERE IS / THERE ARE?</h3>
-      <p>Usamos <strong>THERE IS</strong> y <strong>THERE ARE</strong> para indicar la existencia o presencia de algo en un lugar determinado. Es equivalente al verbo "haber" en español.</p>
-      
-      <h4>Regla básica:</h4>
-      <ul>
-        <li><strong>THERE IS</strong> → se usa con sustantivos en singular</li>
-        <li><strong>THERE ARE</strong> → se usa con sustantivos en plural</li>
-      </ul>
-
-      <h3>Formas del verbo</h3>
-      
-      <table class="theory-table">
-        <tr>
-          <th>Forma</th>
-          <th>Singular (THERE IS)</th>
-          <th>Plural (THERE ARE)</th>
-        </tr>
-        <tr>
-          <td><strong>Afirmativa</strong></td>
-          <td>There is / There's</td>
-          <td>There are</td>
-        </tr>
-        <tr>
-          <td><strong>Negativa</strong></td>
-          <td>There is not / There isn't / There's not</td>
-          <td>There are not / There aren't</td>
-        </tr>
-        <tr>
-          <td><strong>Interrogativa</strong></td>
-          <td>Is there...?</td>
-          <td>Are there...?</td>
-        </tr>
-      </table>
-
-      <h3>Ejemplos:</h3>
-      
-      <div class="theory-example">
-        <h4>Forma Afirmativa:</h4>
-        <ul>
-          <li><strong>There is</strong> a book on the table. (Hay un libro sobre la mesa)</li>
-          <li><strong>There are</strong> some students in the classroom. (Hay algunos estudiantes en el aula)</li>
-        </ul>
-      </div>
-
-      <div class="theory-example">
-        <h4>Forma Negativa:</h4>
-        <ul>
-          <li><strong>There isn't</strong> any milk in the fridge. (No hay leche en la nevera)</li>
-          <li><strong>There aren't</strong> many people here. (No hay mucha gente aquí)</li>
-        </ul>
-      </div>
-
-      <div class="theory-example">
-        <h4>Forma Interrogativa:</h4>
-        <ul>
-          <li><strong>Is there</strong> a bank near here? (¿Hay un banco cerca de aquí?)</li>
-          <li><strong>Are there</strong> any questions? (¿Hay preguntas?)</li>
-        </ul>
-      </div>
-
-      <h3>Cuantificadores importantes:</h3>
-      <ul>
-        <li><strong>Much</strong> (mucho/a) → se usa con sustantivos incontables</li>
-        <li><strong>Many</strong> (muchos/as) → se usa con sustantivos contables</li>
-        <li><strong>A lot of</strong> (mucho/a, muchos/as) → se usa con ambos tipos</li>
-        <li><strong>Little</strong> (poco/a) → se usa con sustantivos incontables</li>
-        <li><strong>Few</strong> (pocos/as) → se usa con sustantivos contables</li>
-        <li><strong>Some</strong> (algunos/as) → se usa en afirmativas</li>
-        <li><strong>Any</strong> (ningún/a, algún/a) → se usa en negativas e interrogativas</li>
-      </ul>
-    `
-  },
-  part1_b: {
-    title: "Teoría: THERE WAS / THERE WERE (Pasado)",
-    content: `
-      <h2>THERE WAS / THERE WERE - Pasado</h2>
-      
-      <h3>¿Cuándo usamos THERE WAS / THERE WERE?</h3>
-      <p>Usamos <strong>THERE WAS</strong> y <strong>THERE WERE</strong> para indicar la existencia o presencia de algo en el pasado. Es equivalente al verbo "había" en español.</p>
-      
-      <h4>Regla básica:</h4>
-      <ul>
-        <li><strong>THERE WAS</strong> → se usa con sustantivos en singular</li>
-        <li><strong>THERE WERE</strong> → se usa con sustantivos en plural</li>
-      </ul>
-
-      <h3>Formas del verbo</h3>
-      
-      <table class="theory-table">
-        <tr>
-          <th>Forma</th>
-          <th>Singular (THERE WAS)</th>
-          <th>Plural (THERE WERE)</th>
-        </tr>
-        <tr>
-          <td><strong>Afirmativa</strong></td>
-          <td>There was</td>
-          <td>There were</td>
-        </tr>
-        <tr>
-          <td><strong>Negativa</strong></td>
-          <td>There was not / There wasn't</td>
-          <td>There were not / There weren't</td>
-        </tr>
-        <tr>
-          <td><strong>Interrogativa</strong></td>
-          <td>Was there...?</td>
-          <td>Were there...?</td>
-        </tr>
-      </table>
-
-      <h3>Ejemplos:</h3>
-      
-      <div class="theory-example">
-        <h4>Forma Afirmativa:</h4>
-        <ul>
-          <li><strong>There was</strong> a party last night. (Había/Hubo una fiesta anoche)</li>
-          <li><strong>There were</strong> many people at the concert. (Había mucha gente en el concierto)</li>
-        </ul>
-      </div>
-
-      <div class="theory-example">
-        <h4>Forma Negativa:</h4>
-        <ul>
-          <li><strong>There wasn't</strong> enough time. (No había tiempo suficiente)</li>
-          <li><strong>There weren't</strong> many students in class yesterday. (No había muchos estudiantes en clase ayer)</li>
-        </ul>
-      </div>
-
-      <div class="theory-example">
-        <h4>Forma Interrogativa:</h4>
-        <ul>
-          <li><strong>Was there</strong> a meeting yesterday? (¿Había/Hubo una reunión ayer?)</li>
-          <li><strong>Were there</strong> any problems? (¿Había algún problema?)</li>
-        </ul>
-      </div>
-
-      <h3>Expresiones de tiempo comunes:</h3>
-      <ul>
-        <li><strong>Yesterday</strong> (ayer)</li>
-        <li><strong>Last week/month/year</strong> (la semana/mes/año pasado)</li>
-        <li><strong>Ago</strong> (hace... tiempo)</li>
-        <li><strong>In the past</strong> (en el pasado)</li>
-        <li><strong>When I was young</strong> (cuando era joven)</li>
-      </ul>
-    `
-  },
-  part1_c: {
-    title: "Teoría: THERE WILL BE (Futuro)",
-    content: `
-      <h2>THERE WILL BE - Futuro</h2>
-      
-      <h3>¿Cuándo usamos THERE WILL BE?</h3>
-      <p>Usamos <strong>THERE WILL BE</strong> para indicar la existencia o presencia de algo en el futuro. Es equivalente al verbo "habrá" en español.</p>
-      
-      <h4>Regla básica:</h4>
-      <ul>
-        <li><strong>THERE WILL BE</strong> → se usa tanto para singular como para plural</li>
-        <li>No cambia según el número del sustantivo que le sigue</li>
-      </ul>
-
-      <h3>Formas del verbo</h3>
-      
-      <table class="theory-table">
-        <tr>
-          <th>Forma</th>
-          <th>Estructura</th>
-          <th>Contracción</th>
-        </tr>
-        <tr>
-          <td><strong>Afirmativa</strong></td>
-          <td>There will be</td>
-          <td>There'll be</td>
-        </tr>
-        <tr>
-          <td><strong>Negativa</strong></td>
-          <td>There will not be</td>
-          <td>There won't be</td>
-        </tr>
-        <tr>
-          <td><strong>Interrogativa</strong></td>
-          <td>Will there be...?</td>
-          <td>-</td>
-        </tr>
-      </table>
-
-      <h3>Ejemplos:</h3>
-      
-      <div class="theory-example">
-        <h4>Forma Afirmativa:</h4>
-        <ul>
-          <li><strong>There will be</strong> a meeting tomorrow. (Habrá una reunión mañana)</li>
-          <li><strong>There'll be</strong> many tourists in summer. (Habrá muchos turistas en verano)</li>
-        </ul>
-      </div>
-
-      <div class="theory-example">
-        <h4>Forma Negativa:</h4>
-        <ul>
-          <li><strong>There won't be</strong> any classes next week. (No habrá clases la próxima semana)</li>
-          <li><strong>There will not be</strong> enough chairs for everyone. (No habrá suficientes sillas para todos)</li>
-        </ul>
-      </div>
-
-      <div class="theory-example">
-        <h4>Forma Interrogativa:</h4>
-        <ul>
-          <li><strong>Will there be</strong> food at the party? (¿Habrá comida en la fiesta?)</li>
-          <li><strong>Will there be</strong> any changes to the schedule? (¿Habrá cambios en el horario?)</li>
-        </ul>
-      </div>
-
-      <h3>Expresiones de tiempo futuro:</h3>
-      <ul>
-        <li><strong>Tomorrow</strong> (mañana)</li>
-        <li><strong>Next week/month/year</strong> (la próxima semana/mes/año)</li>
-        <li><strong>In the future</strong> (en el futuro)</li>
-        <li><strong>Soon</strong> (pronto)</li>
-        <li><strong>Later</strong> (más tarde)</li>
-      </ul>
-    `
-  }
-};
-
 // Exercise data
 const exerciseData = {
   "part1_a": {
@@ -280,7 +49,7 @@ const exerciseData = {
         ]
       },
       {
-        "title": "Ejercicio 4: Completa preguntas con HOW MUCH/HOW MANY",
+        "title": "Ejercicio 4: Completa las preguntas con HOW MUCH/HOW MANY",
         "questions": [
           { "id": 31, "question": "_____ money _____? _____ very little.", "answers": ["how much money is there? there is very little", "how much money is there? there's very little"] },
           { "id": 32, "question": "_____ doors _____ in the lab? _____ just one.", "answers": ["how many doors are there in the lab? there is just one", "how many doors are there in the lab? there's just one"] },
@@ -315,7 +84,7 @@ const exerciseData = {
     "title": "PARTE I-B: Pasado - THERE WAS/THERE WERE",
     "sections": [
       {
-        "title": "Ejercicio 1: Cambia al pasado",
+        "title": "Ejercicio 1: Cambia al tiempo pasado",
         "questions": [
           { "id": 51, "question": "There's a lot of work in the office today.", "answers": ["there was a lot of work in the office today"] },
           { "id": 52, "question": "There are two books missing from the shelf.", "answers": ["there were two books missing from the shelf"] },
@@ -330,7 +99,7 @@ const exerciseData = {
         ]
       },
       {
-        "title": "Ejercicio 2: Responde usando la información dada",
+        "title": "Ejercicio 2: Contesta usando la información dada",
         "questions": [
           { "id": 61, "question": "How many students were there in this class last year? (about 20)", "answers": ["there were about 20 students", "there were about twenty students", "about 20", "about twenty"] },
           { "id": 62, "question": "Were there many people at the meeting last Monday? (No, not more than 30)", "answers": ["no, there weren't many people", "no, not more than 30", "no, not more than thirty", "no, there were not more than 30"] },
@@ -347,7 +116,7 @@ const exerciseData = {
     "title": "PARTE I-C: Futuro - THERE WILL BE",
     "sections": [
       {
-        "title": "Ejercicio 1: Cambia al futuro",
+        "title": "Ejercicio 1: Cambia al tiempo futuro",
         "questions": [
           { "id": 68, "question": "There is a lot of free time in the evening.", "answers": ["there will be a lot of free time in the evening", "there'll be a lot of free time in the evening"] },
           { "id": 69, "question": "There are some women at the meeting.", "answers": ["there will be some women at the meeting", "there'll be some women at the meeting"] },
@@ -389,7 +158,7 @@ const exerciseData = {
         ]
       },
       {
-        "title": "Ejercicio 4: Responde en inglés",
+        "title": "Ejercicio 4: Contesta en inglés",
         "questions": [
           { "id": 95, "question": "How many days are there in a week?", "answers": ["there are seven days in a week", "seven days", "7 days", "there are 7 days in a week"] },
           { "id": 96, "question": "How many days will there be in February next year?", "answers": ["there will be 28 days in february next year", "28 days", "twenty-eight days", "there will be twenty-eight days"] },
@@ -426,7 +195,7 @@ const exerciseData = {
     "title": "PARTE II: Números",
     "sections": [
       {
-        "title": "Ejercicio 1: Escribe los números",
+        "title": "Ejercicio 1: Escribe los números en palabras",
         "questions": [
           { "id": 117, "question": "12", "answers": ["twelve"] },
           { "id": 118, "question": "56", "answers": ["fifty-six", "fifty six"] },
@@ -446,37 +215,37 @@ const exerciseData = {
       }
     ]
   },
-  "part3_vocab": {
+  "part3": {
     "title": "PARTE III: Vocabulario - People & Family",
     "sections": [
       {
         "title": "Ejercicio 1: Escribe la palabra en inglés",
         "questions": [
-          {"id": 131, "question": "persona", "answers": ["person"]},
-          {"id": 132, "question": "hombre", "answers": ["man"]},
-          {"id": 133, "question": "mujer", "answers": ["woman"]},
-          {"id": 134, "question": "niño (varón)", "answers": ["boy"]},
-          {"id": 135, "question": "niña", "answers": ["girl"]},
-          {"id": 136, "question": "abuelo", "answers": ["grandfather", "grandpa"]},
-          {"id": 137, "question": "abuela", "answers": ["grandmother", "granny", "grandma"]},
-          {"id": 138, "question": "padres", "answers": ["parents"]},
-          {"id": 139, "question": "hijo", "answers": ["son"]},
-          {"id": 140, "question": "hija", "answers": ["daughter"]}
+          { "id": 131, "question": "persona", "answers": ["person"] },
+          { "id": 132, "question": "hombre", "answers": ["man"] },
+          { "id": 133, "question": "mujer", "answers": ["woman"] },
+          { "id": 134, "question": "niño (varón)", "answers": ["boy"] },
+          { "id": 135, "question": "niña", "answers": ["girl"] },
+          { "id": 136, "question": "abuelo", "answers": ["grandfather", "grandpa"] },
+          { "id": 137, "question": "abuela", "answers": ["grandmother", "granny", "grandma"] },
+          { "id": 138, "question": "padres", "answers": ["parents"] },
+          { "id": 139, "question": "hijo", "answers": ["son"] },
+          { "id": 140, "question": "hija", "answers": ["daughter"] }
         ]
       },
       {
         "title": "Ejercicio 2: Escribe el significado en español",
         "questions": [
-          {"id": 141, "question": "people", "answers": ["gente", "personas"]},
-          {"id": 142, "question": "children", "answers": ["niños", "hijos"]},
-          {"id": 143, "question": "uncle", "answers": ["tío"]},
-          {"id": 144, "question": "aunt", "answers": ["tía"]},
-          {"id": 145, "question": "cousin", "answers": ["primo", "prima"]},
-          {"id": 146, "question": "nephew", "answers": ["sobrino"]},
-          {"id": 147, "question": "niece", "answers": ["sobrina"]},
-          {"id": 148, "question": "husband", "answers": ["esposo", "marido"]},
-          {"id": 149, "question": "wife", "answers": ["esposa", "mujer"]},
-          {"id": 150, "question": "step-mother", "answers": ["madrastra"]}
+          { "id": 141, "question": "people", "answers": ["gente", "personas"] },
+          { "id": 142, "question": "children", "answers": ["niños", "hijos"] },
+          { "id": 143, "question": "uncle", "answers": ["tío"] },
+          { "id": 144, "question": "aunt", "answers": ["tía"] },
+          { "id": 145, "question": "cousin", "answers": ["primo", "prima"] },
+          { "id": 146, "question": "nephew", "answers": ["sobrino"] },
+          { "id": 147, "question": "niece", "answers": ["sobrina"] },
+          { "id": 148, "question": "husband", "answers": ["esposo", "marido"] },
+          { "id": 149, "question": "wife", "answers": ["esposa", "mujer"] },
+          { "id": 150, "question": "step-mother", "answers": ["madrastra"] }
         ]
       }
     ]
@@ -484,95 +253,44 @@ const exerciseData = {
 };
 
 // Application state
+let studentInfo = { name: '', surname: '' };
 let currentSection = null;
 let currentSubsection = 0;
 let userAnswers = {};
 let sectionProgress = {
-  part1_a: { completed: 0, total: 50 },
-  part1_b: { completed: 0, total: 17 },
-  part1_c: { completed: 0, total: 39 },
-  part2: { completed: 0, total: 14 },
-  part3_vocab: { completed: 0, total: 20 }
+  part1_a: { completed: 0, total: 50, score: 0 },
+  part1_b: { completed: 0, total: 17, score: 0 },
+  part1_c: { completed: 0, total: 39, score: 0 },
+  part2: { completed: 0, total: 14, score: 0 },
+  part3: { completed: 0, total: 20, score: 0 }
 };
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
-  document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('form-student');
-  const studentInfoForm = document.getElementById('student-info-form');
-  const appHeader = document.querySelector('.app-header');
-  const mainMenu = document.getElementById('main-menu');
-
-  // Oculta header y menú hasta que se complete formulario
-  appHeader.style.display = 'none';
-  mainMenu.style.display = 'none';
-
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    const name = document.getElementById('student-name').value.trim();
-    const surname = document.getElementById('student-surname').value.trim();
-
-    if (!name || !surname) {
-      alert('Por favor, introduce nombre y apellido');
-      return;
-    }
-
-    const fullName = `${name} ${surname}`;
-
-    // Muestra header y menú principal
-    appHeader.style.display = 'block';
-    mainMenu.style.display = 'block';
-
-    // Oculta formulario de nombre
-    studentInfoForm.style.display = 'none';
-
-    // Crear o actualizar etiqueta que muestra el nombre del alumno
-    let studentNameDisplay = document.getElementById('student-name-display');
-    if (!studentNameDisplay) {
-      studentNameDisplay = document.createElement('p');
-      studentNameDisplay.id = 'student-name-display';
-      appHeader.appendChild(studentNameDisplay);
-    }
-    studentNameDisplay.textContent = `Alumno: ${fullName}`;
-
-    // Guarda el nombre completo en localStorage para conservarlo
-    localStorage.setItem('studentFullName', fullName);
-  });
-
-  // Si hay nombre guardado en localStorage, oculta formulario y muestra header/menu automáticamente
-  const savedName = localStorage.getItem('studentFullName');
-  if (savedName) {
-    studentInfoForm.style.display = 'none';
-    appHeader.style.display = 'block';
-    mainMenu.style.display = 'block';
-
-    let studentNameDisplay = document.getElementById('student-name-display');
-    if (!studentNameDisplay) {
-      studentNameDisplay = document.createElement('p');
-      studentNameDisplay.id = 'student-name-display';
-      appHeader.appendChild(studentNameDisplay);
-    }
-    studentNameDisplay.textContent = `Alumno: ${savedName}`;
-  }
-});
-
-  showMainMenu();
-  updateMainProgress();
+  showWelcomeScreen();
   
-  // Add event listeners for section cards
+  // Add event listener for student form
+  const studentForm = document.getElementById('student-form');
+  if (studentForm) {
+    studentForm.addEventListener('submit', handleStudentForm);
+  }
+  
+  // Add event listeners for section cards - Fixed to handle entire card clicks
   document.querySelectorAll('.section-card').forEach(card => {
-    card.addEventListener('click', function() {
+    card.addEventListener('click', function(e) {
+      // Prevent clicks on form elements from triggering navigation
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'BUTTON') {
+        return;
+      }
+      
       const section = this.dataset.section;
-      if (section === 'part3_vocab') {
-        showVocabularySection();
-      } else if (theoryData[section]) {
-        showTheorySection(section);
-      } else {
-        // For sections without theory (like numbers), go directly to exercises
+      if (section) {
         showSection(section);
       }
     });
+    
+    // Make sure the entire card appears clickable
+    card.style.cursor = 'pointer';
   });
   
   // Add event listener for check answers button
@@ -592,90 +310,44 @@ document.addEventListener('DOMContentLoaded', function() {
   if (completeBtn) {
     completeBtn.addEventListener('click', completeSection);
   }
-
-  // Add event listener for start exercises button (wait for it to be available)
-  setTimeout(() => {
-    const startExercisesBtn = document.getElementById('start-exercises-btn');
-    if (startExercisesBtn) {
-      startExercisesBtn.addEventListener('click', startExercises);
-    }
-
-    // Add event listener for start vocab exercises button
-    const startVocabExercisesBtn = document.getElementById('start-vocab-exercises-btn');
-    if (startVocabExercisesBtn) {
-      startVocabExercisesBtn.addEventListener('click', startVocabExercises);
-    }
-  }, 100);
 });
+
+// Show welcome screen
+function showWelcomeScreen() {
+  document.getElementById('welcome-screen').classList.remove('hidden');
+  document.getElementById('app-header').classList.add('hidden');
+  document.getElementById('main-menu').classList.add('hidden');
+  document.getElementById('exercise-section').classList.add('hidden');
+}
+
+// Handle student form submission
+function handleStudentForm(event) {
+  event.preventDefault();
+  
+  const name = document.getElementById('student-name').value.trim();
+  const surname = document.getElementById('student-surname').value.trim();
+  
+  if (name && surname) {
+    studentInfo.name = name;
+    studentInfo.surname = surname;
+    
+    // Update student info in header
+    document.getElementById('student-info').textContent = `Estudiante: ${name} ${surname}`;
+    
+    // Hide welcome screen and show main menu
+    document.getElementById('welcome-screen').classList.add('hidden');
+    document.getElementById('app-header').classList.remove('hidden');
+    showMainMenu();
+  }
+}
 
 // Show main menu
 function showMainMenu() {
   document.getElementById('main-menu').classList.remove('hidden');
   document.getElementById('exercise-section').classList.add('hidden');
-  document.getElementById('theory-section').classList.add('hidden');
-  document.getElementById('vocabulary-section').classList.add('hidden');
   updateSectionProgress();
   updateMainProgress();
   checkAllSectionsComplete();
-}
-
-// Show theory section
-function showTheorySection(sectionKey) {
-  currentSection = sectionKey;
-  
-  document.getElementById('main-menu').classList.add('hidden');
-  document.getElementById('exercise-section').classList.add('hidden');
-  document.getElementById('vocabulary-section').classList.add('hidden');
-  document.getElementById('theory-section').classList.remove('hidden');
-  
-  const theoryContent = document.getElementById('theory-content');
-  const theory = theoryData[sectionKey];
-  
-  theoryContent.innerHTML = theory.content;
-  document.getElementById('theory-breadcrumb-text').textContent = theory.title;
-  
-  // Add event listener to the start exercises button after it's created
-  setTimeout(() => {
-    const startExercisesBtn = document.getElementById('start-exercises-btn');
-    if (startExercisesBtn) {
-      startExercisesBtn.onclick = startExercises;
-    }
-  }, 50);
-}
-
-// Show vocabulary section
-function showVocabularySection() {
-  currentSection = 'part3_vocab';
-  
-  document.getElementById('main-menu').classList.add('hidden');
-  document.getElementById('exercise-section').classList.add('hidden');
-  document.getElementById('theory-section').classList.add('hidden');
-  document.getElementById('vocabulary-section').classList.remove('hidden');
-  
-  // Add event listener to the vocabulary exercises button
-  setTimeout(() => {
-    const startVocabExercisesBtn = document.getElementById('start-vocab-exercises-btn');
-    if (startVocabExercisesBtn) {
-      startVocabExercisesBtn.onclick = startVocabExercises;
-    }
-  }, 50);
-}
-
-// Start exercises from theory
-function startExercises() {
-  showSection(currentSection);
-}
-
-// Start vocabulary exercises
-function startVocabExercises() {
-  showSection('part3_vocab');
-}
-
-// Show theory for current section (from exercise view)
-function showTheoryForSection() {
-  if (currentSection && theoryData[currentSection]) {
-    showTheorySection(currentSection);
-  }
 }
 
 // Show specific section
@@ -684,21 +356,11 @@ function showSection(sectionKey) {
   currentSubsection = 0;
   
   document.getElementById('main-menu').classList.add('hidden');
-  document.getElementById('theory-section').classList.add('hidden');
-  document.getElementById('vocabulary-section').classList.add('hidden');
   document.getElementById('exercise-section').classList.remove('hidden');
   
   const sectionData = exerciseData[sectionKey];
   document.getElementById('section-title').textContent = sectionData.title;
   document.getElementById('breadcrumb-text').textContent = sectionData.title;
-  
-  // Show/hide back to theory button
-  const backToTheoryBtn = document.getElementById('back-to-theory-btn');
-  if (theoryData[sectionKey]) {
-    backToTheoryBtn.style.display = 'inline-flex';
-  } else {
-    backToTheoryBtn.style.display = 'none';
-  }
   
   createSubsectionNavigation(sectionData);
   showSubsection(0);
@@ -888,26 +550,35 @@ function completeSection() {
   showMainMenu();
 }
 
-// Update section progress
+// Update section progress and scores
 function updateSectionProgress() {
   Object.keys(sectionProgress).forEach(sectionKey => {
     const sectionData = exerciseData[sectionKey];
     let completed = 0;
+    let correct = 0;
     
-    // Count completed questions
+    // Count completed and correct questions
     sectionData.sections.forEach(subsection => {
       subsection.questions.forEach(question => {
-        if (userAnswers[question.id] && userAnswers[question.id].isCorrect) {
+        if (userAnswers[question.id]) {
           completed++;
+          if (userAnswers[question.id].isCorrect) {
+            correct++;
+          }
         }
       });
     });
     
     sectionProgress[sectionKey].completed = completed;
     
+    // Calculate score out of 10
+    const score = completed > 0 ? Math.round((correct / sectionProgress[sectionKey].total) * 10 * 10) / 10 : 0;
+    sectionProgress[sectionKey].score = score;
+    
     // Update UI
-    const progressText = document.querySelector(`[data-section="${sectionKey}"] .progress-text`);
+    const progressText = document.getElementById(`progress-${sectionKey}`);
     const progressFill = document.querySelector(`[data-section="${sectionKey}"]`);
+    const scoreDisplay = document.getElementById(`score-${sectionKey}`);
     
     if (progressText) {
       progressText.textContent = `${completed}/${sectionProgress[sectionKey].total}`;
@@ -916,6 +587,17 @@ function updateSectionProgress() {
     if (progressFill) {
       const percentage = (completed / sectionProgress[sectionKey].total) * 100;
       progressFill.style.width = `${percentage}%`;
+    }
+    
+    if (scoreDisplay) {
+      const scoreValue = scoreDisplay.querySelector('.score-value');
+      if (scoreValue) {
+        if (completed === sectionProgress[sectionKey].total) {
+          scoreValue.textContent = `${score}/10`;
+        } else {
+          scoreValue.textContent = '-/10';
+        }
+      }
     }
   });
 }
@@ -936,10 +618,11 @@ function updateExerciseProgress() {
   const sectionData = exerciseData[currentSection];
   const currentQuestionIndex = sectionData.sections.slice(0, currentSubsection).reduce((sum, subsection) => sum + subsection.questions.length, 0);
   const totalQuestions = sectionData.sections.reduce((sum, subsection) => sum + subsection.questions.length, 0);
+  const currentSubsectionLength = sectionData.sections[currentSubsection].questions.length;
   
-  document.getElementById('exercise-progress-text').textContent = `${currentQuestionIndex + 1}-${currentQuestionIndex + sectionData.sections[currentSubsection].questions.length}/${totalQuestions}`;
+  document.getElementById('exercise-progress-text').textContent = `${currentQuestionIndex + 1}-${currentQuestionIndex + currentSubsectionLength}/${totalQuestions}`;
   
-  const percentage = ((currentQuestionIndex + sectionData.sections[currentSubsection].questions.length) / totalQuestions) * 100;
+  const percentage = ((currentQuestionIndex + currentSubsectionLength) / totalQuestions) * 100;
   document.getElementById('exercise-progress-fill').style.width = `${percentage}%`;
 }
 
@@ -948,70 +631,54 @@ function checkAllSectionsComplete() {
   const allComplete = Object.values(sectionProgress).every(section => section.completed === section.total);
   
   if (allComplete) {
-    const finalScore = calculateFinalScore();
-    showFinalScore(finalScore);
+    showFinalResults();
   }
 }
 
-// Calculate final score
-function calculateFinalScore() {
-  const totalQuestions = Object.values(sectionProgress).reduce((sum, section) => sum + section.total, 0);
-  const correctAnswers = Object.values(sectionProgress).reduce((sum, section) => sum + section.completed, 0);
+// Show final results
+function showFinalResults() {
+  const finalResultsSection = document.getElementById('final-results-section');
+  const finalStudentName = document.getElementById('final-student-name');
+  const overallScore = document.getElementById('overall-score');
   
-  const percentage = (correctAnswers / totalQuestions) * 100;
-  const scoreOutOf10 = (percentage / 10).toFixed(1);
+  // Calculate overall average
+  const scores = Object.values(sectionProgress).map(section => section.score);
+  const averageScore = Math.round((scores.reduce((sum, score) => sum + score, 0) / scores.length) * 10) / 10;
   
-  return {
-    score: parseFloat(scoreOutOf10),
-    correct: correctAnswers,
-    total: totalQuestions,
-    percentage: percentage.toFixed(1),
-    sections: Object.keys(sectionProgress).map(key => ({
-      name: exerciseData[key].title,
-      correct: sectionProgress[key].completed,
-      total: sectionProgress[key].total
-    }))
-  };
-}
-
-// Show final score
-function showFinalScore(scoreData) {
-  const finalScoreSection = document.getElementById('final-score-section');
-  const scoreDisplay = document.getElementById('final-score-display');
-  const scoreDetails = document.getElementById('score-details');
+  // Update display
+  finalStudentName.textContent = `${studentInfo.name} ${studentInfo.surname}`;
+  overallScore.textContent = `${averageScore}/10`;
   
-  scoreDisplay.querySelector('.score-number').textContent = scoreData.score;
-  
-  let detailsHTML = `
-    <h4>Detalles del puntaje:</h4>
-    <div class="score-item"><span>Total de preguntas:</span><span>${scoreData.total}</span></div>
-    <div class="score-item"><span>Respuestas correctas:</span><span>${scoreData.correct}</span></div>
-    <div class="score-item"><span>Porcentaje:</span><span>${scoreData.percentage}%</span></div>
-    <br>
-    <h5>Por sección:</h5>
-  `;
-  
-  scoreData.sections.forEach(section => {
-    const sectionPercentage = ((section.correct / section.total) * 100).toFixed(1);
-    detailsHTML += `<div class="score-item"><span>${section.name}:</span><span>${section.correct}/${section.total} (${sectionPercentage}%)</span></div>`;
+  // Update individual section scores
+  Object.keys(sectionProgress).forEach(sectionKey => {
+    const scoreElement = document.getElementById(`final-score-${sectionKey}`);
+    if (scoreElement) {
+      scoreElement.textContent = `${sectionProgress[sectionKey].score}/10`;
+    }
   });
   
-  scoreDetails.innerHTML = detailsHTML;
-  finalScoreSection.classList.remove('hidden');
+  finalResultsSection.classList.remove('hidden');
 }
 
 // Reset all progress
 function resetAllProgress() {
-  userAnswers = {};
-  sectionProgress = {
-    part1_a: { completed: 0, total: 50 },
-    part1_b: { completed: 0, total: 17 },
-    part1_c: { completed: 0, total: 39 },
-    part2: { completed: 0, total: 14 },
-    part3_vocab: { completed: 0, total: 20 }
-  };
-  
-  document.getElementById('final-score-section').classList.add('hidden');
-  updateSectionProgress();
-  updateMainProgress();
+  if (confirm('¿Estás seguro de que quieres reiniciar todo el progreso? Esta acción no se puede deshacer.')) {
+    userAnswers = {};
+    sectionProgress = {
+      part1_a: { completed: 0, total: 50, score: 0 },
+      part1_b: { completed: 0, total: 17, score: 0 },
+      part1_c: { completed: 0, total: 39, score: 0 },
+      part2: { completed: 0, total: 14, score: 0 },
+      part3: { completed: 0, total: 20, score: 0 }
+    };
+    
+    document.getElementById('final-results-section').classList.add('hidden');
+    updateSectionProgress();
+    updateMainProgress();
+  }
+}
+
+// Print results function
+function printResults() {
+  window.print();
 }
