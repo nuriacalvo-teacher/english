@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC ENGLISH - LESSON 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <h1>BASIC ENGLISH - LESSON 2</h1>
+            <div class="progress-info">
+                <span>Progreso: </span>
+                <span id="progress-display">0/140 completadas</span>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Menu -->
+        <div id="main-menu" class="main-menu">
+            <div class="container">
+                <h2>Selecciona una sección para comenzar</h2>
+                <div class="sections-grid">
+                    <div class="section-card" data-section="part1_a">
+                        <div class="section-header">
+                            <h3>PARTE I-A: Presente</h3>
+                            <span class="section-badge">THERE IS / THERE ARE</span>
+                        </div>
+                        <p>5 ejercicios • 50 preguntas</p>
+                        <div class="section-progress">
+                            <span class="progress-text">0/50</span>
+                            <div class="mini-progress">
+                                <div class="mini-progress-fill" data-section="part1_a"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-card" data-section="part1_b">
+                        <div class="section-header">
+                            <h3>PARTE I-B: Pasado</h3>
+                            <span class="section-badge">THERE WAS / THERE WERE</span>
+                        </div>
+                        <p>2 ejercicios • 17 preguntas</p>
+                        <div class="section-progress">
+                            <span class="progress-text">0/17</span>
+                            <div class="mini-progress">
+                                <div class="mini-progress-fill" data-section="part1_b"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-card" data-section="part1_c">
+                        <div class="section-header">
+                            <h3>PARTE I-C: Futuro</h3>
+                            <span class="section-badge">THERE WILL BE</span>
+                        </div>
+                        <p>5 ejercicios • 39 preguntas</p>
+                        <div class="section-progress">
+                            <span class="progress-text">0/39</span>
+                            <div class="mini-progress">
+                                <div class="mini-progress-fill" data-section="part1_c"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-card" data-section="part2">
+                        <div class="section-header">
+                            <h3>PARTE II: Números</h3>
+                            <span class="section-badge">NUMBERS</span>
+                        </div>
+                        <p>1 ejercicio • 14 preguntas</p>
+                        <div class="section-progress">
+                            <span class="progress-text">0/14</span>
+                            <div class="mini-progress">
+                                <div class="mini-progress-fill" data-section="part2"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-card" data-section="part3_vocab">
+                        <div class="section-header">
+                            <h3>PARTE III: Vocabulario</h3>
+                            <span class="section-badge">PEOPLE & FAMILY</span>
+                        </div>
+                        <p>2 ejercicios • 20 preguntas</p>
+                        <div class="section-progress">
+                            <span class="progress-text">0/20</span>
+                            <div class="mini-progress">
+                                <div class="mini-progress-fill" data-section="part3_vocab"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="final-score-section hidden" id="final-score-section">
+                    <div class="card">
+                        <h3>¡Felicitaciones! Has completado todos los ejercicios</h3>
+                        <div class="final-score" id="final-score-display">
+                            <span class="score-number">0</span><span class="score-total">/10</span>
+                        </div>
+                        <div class="score-details" id="score-details"></div>
+                        <button class="btn btn--primary" onclick="resetAllProgress()">Reiniciar Todo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Theory Section -->
+        <div id="theory-section" class="theory-section hidden">
+            <div class="container">
+                <div class="breadcrumb">
+                    <button class="btn btn--outline" onclick="showMainMenu()">← Menú Principal</button>
+                    <span id="theory-breadcrumb-text"></span>
+                </div>
+
+                <div class="theory-content" id="theory-content">
+                    <!-- Theory content will be populated by JS -->
+                </div>
+
+                <div class="theory-actions">
+                    <button class="btn btn--primary" id="start-exercises-btn">Comenzar Ejercicios</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Section -->
+        <div id="vocabulary-section" class="vocabulary-section hidden">
+            <div class="container">
+                <div class="breadcrumb">
+                    <button class="btn btn--outline" onclick="showMainMenu()">← Menú Principal</button>
+                    <span>Vocabulario - Personas y Familia</span>
+                </div>
+
+                <div class="vocabulary-content">
+                    <h2>VOCABULARIO BÁSICO: Personas y Familia</h2>
+                    
+                    <div class="vocab-section">
+                        <h3>PERSONAS (PEOPLE)</h3>
+                        <div class="vocab-grid">
+                            <div class="vocab-item">
+                                <span class="english">person</span>
+                                <span class="phonetic">/pe:rsn/</span>
+                                <span class="spanish">persona</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">people</span>
+                                <span class="phonetic">/pí:pl/</span>
+                                <span class="spanish">gente, personas</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">man/men</span>
+                                <span class="phonetic">/mæn/men/</span>
+                                <span class="spanish">hombre/s</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">woman/women</span>
+                                <span class="phonetic">/wuman/wímen/</span>
+                                <span class="spanish">mujer/es</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">child/children</span>
+                                <span class="phonetic">/tcháild/tchildrn/</span>
+                                <span class="spanish">niño/s, pequeño/s</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">boy</span>
+                                <span class="phonetic">/boi/</span>
+                                <span class="spanish">niño</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">girl</span>
+                                <span class="phonetic">/ge:rl/</span>
+                                <span class="spanish">niña</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">gentleman/gentlemen</span>
+                                <span class="phonetic">/dlléntlman/-men/</span>
+                                <span class="spanish">caballero/os</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">lady/ladies</span>
+                                <span class="phonetic">/léidi/léidiz/</span>
+                                <span class="spanish">dama/as</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">kids</span>
+                                <span class="phonetic">/kidz/</span>
+                                <span class="spanish">chicos, niños</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vocab-section">
+                        <h3>FAMILIA Y PARIENTES (FAMILY AND RELATIVES)</h3>
+                        <div class="vocab-grid">
+                            <div class="vocab-item">
+                                <span class="english">parents</span>
+                                <span class="phonetic">/péarents/</span>
+                                <span class="spanish">padres</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">father</span>
+                                <span class="phonetic">/fá:!er/</span>
+                                <span class="spanish">padre</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">mother</span>
+                                <span class="phonetic">/má!er/</span>
+                                <span class="spanish">madre</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">dad, daddy</span>
+                                <span class="phonetic">/dæd, dædi/</span>
+                                <span class="spanish">papá, papi</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">mom, mum, mummy</span>
+                                <span class="phonetic">/mam, mámi/</span>
+                                <span class="spanish">mamá, mami</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">son</span>
+                                <span class="phonetic">/sán/</span>
+                                <span class="spanish">hijo</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">daughter</span>
+                                <span class="phonetic">/dó:ter/</span>
+                                <span class="spanish">hija</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">brother</span>
+                                <span class="phonetic">/brá!er/</span>
+                                <span class="spanish">hermano</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">sister</span>
+                                <span class="phonetic">/síster/</span>
+                                <span class="spanish">hermana</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">grandparents</span>
+                                <span class="phonetic">/grandpéarents/</span>
+                                <span class="spanish">abuelos</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">grandfather</span>
+                                <span class="phonetic">/grandfá:!er/</span>
+                                <span class="spanish">abuelo</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">grandmother</span>
+                                <span class="phonetic">/grandmá!er/</span>
+                                <span class="spanish">abuela</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">uncle</span>
+                                <span class="phonetic">/á#kl/</span>
+                                <span class="spanish">tío</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">aunt</span>
+                                <span class="phonetic">/a:nt/</span>
+                                <span class="spanish">tía</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">cousin</span>
+                                <span class="phonetic">/kázin/</span>
+                                <span class="spanish">primo</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">husband</span>
+                                <span class="phonetic">/házband/</span>
+                                <span class="spanish">esposo, marido</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">wife</span>
+                                <span class="phonetic">/waif/</span>
+                                <span class="spanish">esposa, mujer</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">nephew</span>
+                                <span class="phonetic">/néfi u/</span>
+                                <span class="spanish">sobrino</span>
+                            </div>
+                            <div class="vocab-item">
+                                <span class="english">niece</span>
+                                <span class="phonetic">/ni:s/</span>
+                                <span class="spanish">sobrina</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vocabulary-actions">
+                    <button class="btn btn--primary" id="start-vocab-exercises-btn">Comenzar Ejercicios de Vocabulario</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise Section -->
+        <div id="exercise-section" class="exercise-section hidden">
+            <div class="container">
+                <div class="breadcrumb">
+                    <button class="btn btn--outline" onclick="showMainMenu()">← Menú Principal</button>
+                    <button class="btn btn--outline" id="back-to-theory-btn" onclick="showTheoryForSection()">← Teoría</button>
+                    <span id="breadcrumb-text"></span>
+                </div>
+
+                <div class="exercise-header">
+                    <h2 id="section-title"></h2>
+                    <div class="exercise-progress">
+                        <span id="exercise-progress-text">1/10</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="exercise-progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subsection-nav" id="subsection-nav">
+                    <!-- Subsection buttons will be populated by JS -->
+                </div>
+
+                <div class="exercise-content" id="exercise-content">
+                    <h3 id="subsection-title"></h3>
+                    <div class="questions-container" id="questions-container">
+                        <!-- Questions will be populated by JS -->
+                    </div>
+                    
+                    <div class="exercise-actions">
+                        <button class="btn btn--primary" id="check-answers-btn">Verificar Respuestas</button>
+                        <button class="btn btn--secondary hidden" id="next-subsection-btn">Siguiente Ejercicio</button>
+                        <button class="btn btn--secondary hidden" id="complete-section-btn">Completar Sección</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
