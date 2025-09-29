@@ -497,6 +497,66 @@ let sectionProgress = {
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('form-student');
+  const studentInfoForm = document.getElementById('student-info-form');
+  const appHeader = document.querySelector('.app-header');
+  const mainMenu = document.getElementById('main-menu');
+
+  // Oculta header y menú hasta que se complete formulario
+  appHeader.style.display = 'none';
+  mainMenu.style.display = 'none';
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const name = document.getElementById('student-name').value.trim();
+    const surname = document.getElementById('student-surname').value.trim();
+
+    if (!name || !surname) {
+      alert('Por favor, introduce nombre y apellido');
+      return;
+    }
+
+    const fullName = `${name} ${surname}`;
+
+    // Muestra header y menú principal
+    appHeader.style.display = 'block';
+    mainMenu.style.display = 'block';
+
+    // Oculta formulario de nombre
+    studentInfoForm.style.display = 'none';
+
+    // Crear o actualizar etiqueta que muestra el nombre del alumno
+    let studentNameDisplay = document.getElementById('student-name-display');
+    if (!studentNameDisplay) {
+      studentNameDisplay = document.createElement('p');
+      studentNameDisplay.id = 'student-name-display';
+      appHeader.appendChild(studentNameDisplay);
+    }
+    studentNameDisplay.textContent = `Alumno: ${fullName}`;
+
+    // Guarda el nombre completo en localStorage para conservarlo
+    localStorage.setItem('studentFullName', fullName);
+  });
+
+  // Si hay nombre guardado en localStorage, oculta formulario y muestra header/menu automáticamente
+  const savedName = localStorage.getItem('studentFullName');
+  if (savedName) {
+    studentInfoForm.style.display = 'none';
+    appHeader.style.display = 'block';
+    mainMenu.style.display = 'block';
+
+    let studentNameDisplay = document.getElementById('student-name-display');
+    if (!studentNameDisplay) {
+      studentNameDisplay = document.createElement('p');
+      studentNameDisplay.id = 'student-name-display';
+      appHeader.appendChild(studentNameDisplay);
+    }
+    studentNameDisplay.textContent = `Alumno: ${savedName}`;
+  }
+});
+
   showMainMenu();
   updateMainProgress();
   
