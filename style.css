@@ -1351,4 +1351,56 @@ select.form-control {
     break-inside: avoid;
     margin-bottom: var(--space-12);
   }
+  /* Estilos para formulario de nombre y apellido */
+.student-info-form {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.student-info-form h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.student-info-form label {
+  display: block;
+  font-weight: 600;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.student-info-form input[type="text"] {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.student-info-form button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #007acc;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.student-info-form button:hover {
+  background-color: #005f99;
+}
+
 }
