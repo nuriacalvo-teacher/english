@@ -264,6 +264,21 @@ let sectionProgress = {
   part2: { completed: 0, total: 14, score: 0 },
   part3: { completed: 0, total: 20, score: 0 }
 };
+const SHEETS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbz4ruT1J62_fDFaaHcJWko9D3mpMz3wdb6CB0TAFWEDNygKLu3pnuualonXTm4a7qRO/exec";
+
+async function postResults(payload) {
+try {
+const res = await fetch(SHEETS_WEBAPP_URL, {
+method: "POST",
+headers: {"Content-Type": "application/json"},
+body: JSON.stringify(payload)
+});
+return await res.json();
+} catch (e) {
+console.error("Error enviando resultados:", e);
+return {status: "error", message: e.message};
+}
+}
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
