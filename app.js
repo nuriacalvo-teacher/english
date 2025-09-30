@@ -352,6 +352,26 @@ function handleStudentForm(event) {
     // Hide welcome screen and show main menu
     document.getElementById('welcome-screen').classList.add('hidden');
     document.getElementById('app-header').classList.remove('hidden');
+    function completeSection() {
+// calcular aciertos de la sección actual
+const sectionKey = currentSection;
+const sectionData = exerciseData[sectionKey];
+let correct = 0;
+sectionData.sections.forEach(sub =>
+sub.questions.forEach(q => { if (userAnswers[q.id]?.isCorrect) correct++; })
+);
+
+const payload = {
+name: studentInfo.name,
+surname: studentInfo.surname,
+section: sectionKey,
+correct,
+total: sectionProgress[sectionKey].total,
+score10: sectionProgress[sectionKey].score
+};
+
+postResults(payload).then(console.log).catch(console.error);
+
     showMainMenu();
   }
 }
@@ -659,6 +679,17 @@ function showFinalResults() {
   // Calculate overall average
   const scores = Object.values(sectionProgress).map(section => section.score);
   const averageScore = Math.round((scores.reduce((sum, score) => sum + score, 0) / scores.length) * 10) / 10;
+
+  // envío global
+postResults({
+name: studentInfo.name,
+surname: studentInfo.surname,
+section: "overall",
+correct: null,
+total: null,
+score10: null,
+overall10: averageScore
+});
   
   // Update display
   finalStudentName.textContent = `${studentInfo.name} ${studentInfo.surname}`;
